@@ -8,3 +8,6 @@
 @media print{.sidebar,.topbar,.head-actions,.settle-actions,.toast,.demo-banner{display:none!important}.workspace{margin:0;padding:0}body{background:white}.page-head{margin-top:0}.panel,.settle-person{border:1px solid #ddd;break-inside:avoid}}
 :root{--muted:#75604d}.mobile-date{display:none}.footnote>svg{width:13px;height:13px;vertical-align:-2px}
 @media(max-width:760px){.nav button{color:#79634f;font-size:11px}.mobile-date{display:inline}.row-info small,.day-title,.stats-strip label{font-size:11px}}
+#main:focus{outline:none}
+@media(max-width:760px){.workspace input,.workspace select,.workspace textarea,dialog input,dialog select,dialog textarea{font-size:16px;caret-color:var(--brown)}.modal-body .form-row{grid-template-columns:minmax(0,1fr);gap:0}.modal-body .field{min-width:0}.field input,.field select,.field textarea{min-width:0;max-width:100%}.field input[type=date]{display:block;width:100%;min-inline-size:0}.field input[type=date]::-webkit-date-and-time-value{text-align:left}}
+@media(max-width:360px){.top-left{flex-shrink:0}.top-actions{min-width:0}.mobile-brand,.saved-chip{white-space:nowrap}.book-switch{max-width:100px}}

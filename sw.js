@@ -1,4 +1,4 @@
-const CACHE='yiben-shell-v5';
+const CACHE='yiben-shell-v6';
 const FILES=['./','./index.html','./styles.css','./app.js','./domain.js','./storage.js','./icons.js','./demo.js','./icon.svg','./icon-192.png','./icon-512.png','./apple-touch-icon.png','./manifest.webmanifest','./preview.html','./preview.css','./preview.js'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES))));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('yiben-shell-')&&k!==CACHE).map(k=>caches.delete(k))))));
